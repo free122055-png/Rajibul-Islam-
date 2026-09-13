@@ -62,6 +62,9 @@ export interface PaymentReceiptData {
   beneficiaryDistrict?: string;
   beneficiaryPhone?: string;
   beneficiaryRelation?: string;
+  grossAmount?: number;
+  feeBdt?: number;
+  receiverPhone?: string;
 }
 
 interface BnbPaymentReceiptModalProps {

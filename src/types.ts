@@ -104,6 +104,10 @@ export interface User {
   bnbCardStatus?: 'active' | 'inactive';
   bnbCardIssuedAt?: string;
   bnbCardOtpLocked?: boolean;
+  activeCardOtp?: string;
+  activeCardOtpAmount?: number;
+  activeCardOtpRequester?: string;
+  activeCardOtpTime?: string;
   savedBnbCards?: SavedBnbCard[];
   latitude?: number;
   longitude?: number;
@@ -280,6 +284,7 @@ export interface Transaction {
   userPhone?: string;
   senderPhone?: string;
   senderNumber?: string;
+  receiverPhone?: string;
   userMemberId?: string;
   receiptImage?: string;
   phone?: string;
